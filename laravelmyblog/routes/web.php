@@ -72,6 +72,8 @@ Route::group(['prefix' => 'admin', 'namespace' => 'Admin', 'middleware' => 'chec
 
 });
 
+Route::get('text',"Admin\LoginController@index");
+
 Route::get('admin/login/index', "Admin\LoginController@index");
 Route::post('admin/login/check', "Admin\LoginController@check");
 
